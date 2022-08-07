@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: block;
+  min-height: 43vh; /* pour que le footer ne soit pas au milieu de l'écran*/
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.h4Bold {
+  margin: 10px 0 5px 0;
+  font-weight: 600;
+  border-left: 1px solid rgb(158, 204, 231);
+  border-bottom: 1px solid rgb(158, 204, 231);
+  border-radius: 3px;
+  padding: 4px 0 4px 6px;
+  /* width: 25%; */
+  width: fit-content;
+  color: rgb(158, 204, 231);
+}
+.flexV {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.flexH {
+  display: flex;
+  flex-flow: row;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.inputClass {
+  display: block;
+  width: 300px;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.loginSubmit {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: right;
+}
+.checkBox {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.divCenter {
+  display: block;
+  margin: 0 auto;
+}
+.textCenter {
+  text-align: center;
+}
+.flexHForm {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  gap: 60px;
+}
+.formikAlert {
+  color: red;
+  margin: 10px 0;
+}
+
+.width80c {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+svg:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.positRel {
+  position: relative;
+}
+/* ****************************** RESPONSIVE *********************************/
+@media (max-width: 1400px) {
+  main {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .flexHForm {
+    flex-direction: column;
+  }
+  h1 {
+    text-align: left;
+  }
+}

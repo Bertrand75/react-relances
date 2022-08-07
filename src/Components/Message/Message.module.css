@@ -1,0 +1,19 @@
+.messageContainer {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 80%;
+  background-color: white;
+}
+
+.okMessageContainer {
+  border: 3px dotted rgb(39, 121, 39);
+  color: rgb(39, 121, 39);
+}
+.errorMessageContainer {
+  border: 3px dotted red;
+  color: red;
+}

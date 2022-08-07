@@ -1,0 +1,141 @@
+.tabsContainer {
+  background-color: whitesmoke;
+}
+.tabsContainer > div {
+  display: flex;
+  flex-direction: row;
+}
+.tabsContainer > div > h2 {
+  width: 300px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgb(214, 214, 214);
+  border-bottom: 2px solid black;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.tabsContainer > div > div {
+  border-bottom: 2px solid black;
+  flex-grow: 0.995;
+}
+
+.tabsContent {
+  padding: 50px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.photoProfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.flexContainerColumn {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  margin: 0 auto;
+}
+.flexContainerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexItemSize1 {
+  flex-basis: 7%;
+  text-align: center;
+}
+.flexItemSize2 {
+  flex-basis: 15%;
+  justify-content: space-between;
+}
+.flexItemSize3 {
+  flex-basis: 20%;
+  justify-content: space-between;
+}
+.flexItemAlignCenter {
+  align-self: center;
+}
+.rowStyle {
+  background-color: whitesmoke;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px 0;
+}
+.rowStyleHead {
+  background-color: rgb(8, 121, 33);
+  color: white;
+}
+.inputDate {
+  height: 35px;
+  font-size: 1rem;
+  border: 3px solid rgb(78, 128, 236);
+  border-radius: 3px;
+}
+.textAreaContainer {
+  position: relative;
+}
+.textArea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+.textAreaIcon {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+.buttonContainer {
+  text-align: right;
+  padding: 0 10px;
+}
+.deleteButton {
+  font-size: 1rem;
+  padding: 7px;
+}
+.border {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: whitesmoke;
+}
+
+.interest0 {
+  background-color: #ff0d0d;
+}
+.interest1 {
+  background-color: #ff4e11;
+}
+.interest2 {
+  background-color: #ff8e15;
+}
+.interest3 {
+  background-color: #fab733;
+}
+.interest4 {
+  background-color: #acb334;
+}
+.interest5 {
+  background-color: #69b34c;
+}
+
+/* ****************************** RESPONSIVE *********************************/
+@media (max-width: 768px) {
+  .photoProfil {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+.pageContainer {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.etatRelancesContainer {
+  border: 1px solid black;
+  padding: 40px;
+  background-color: white;
+}
+.etatRelancesH2 {
+  text-align: left;
+  font-size: 1rem;
+}
+.etatRelancesContainer h1 + .etatRelancesH2 {
+  margin-top: 70px;
+}
+.etatRelancesTable {
+  width: 100%;
+  border: 1px solid;
+  margin-top: 40px;
+}
+.etatRelancesTable th {
+  padding: 10px 0;
+  border: 1px solid;
+}
+.etatRelancesTable td {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.width1 {
+  width: 20%;
+}
+.width2 {
+  width: 40%;
+}
+.printButton {
+  height: 50px;
+  width: 200px;
+  font-size: 1.2rem;
+  float: right;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+}

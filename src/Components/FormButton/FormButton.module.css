@@ -1,0 +1,7 @@
+.formButton {
+  cursor: pointer;
+  padding: 5px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  float: right;
+}

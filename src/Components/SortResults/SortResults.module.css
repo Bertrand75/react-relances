@@ -1,0 +1,38 @@
+.selectInput {
+  padding: 10px 40px 10px 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.paramList {
+  position: absolute;
+  background: whitesmoke;
+  z-index: 1;
+  width: 180px;
+  top: 50px;
+  max-height: 500px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.paramListReduced {
+  max-height: 0;
+}
+
+.selectThis {
+  padding: 0.8rem;
+}
+
+.selectThis:hover {
+  background-color: rgb(221, 220, 220);
+}
+.chevron {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.selectContainer {
+  position: relative;
+}

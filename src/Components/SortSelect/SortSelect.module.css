@@ -1,0 +1,14 @@
+.triContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.triSelect {
+  width: 250px;
+  height: 30px;
+  border: 2px solid #087921;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 20px;
+}

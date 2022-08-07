@@ -1,0 +1,19 @@
+.fieldsetClass {
+  border-radius: 10px;
+  padding: 30px 120px;
+  margin: 20px 0;
+  background: linear-gradient(rgb(243, 187, 122), rgb(235, 187, 132));
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+.legendClass {
+  background-color: #000;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+/* ****************************** RESPONSIVE *********************************/
+@media (max-width: 1200px) {
+  .fieldsetClass {
+    padding: 30px 30px;
+  }
+}

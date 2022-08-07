@@ -1,0 +1,85 @@
+.tabsContainer {
+  background-color: whitesmoke;
+}
+.tabsContainer > div {
+  display: flex;
+  flex-direction: row;
+}
+.tabsContainer > div > h2 {
+  width: 300px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgb(214, 214, 214);
+  border-bottom: 2px solid black;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.tabsContainer > div > div {
+  border-bottom: 2px solid black;
+  flex-grow: 0.995;
+}
+.tabsContent {
+  padding: 50px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tabsContent h3 {
+  margin: 20px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.userForm {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #8db3df;
+  border-radius: 5px;
+}
+.userForm > div {
+  display: flex;
+  align-items: center;
+  height: 30px;
+
+  padding: 1.5rem 1rem;
+  background-color: #5e7497;
+  color: white;
+  border-radius: 5px;
+}
+.userForm div div {
+  width: 250px;
+}
+.userForm div div input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.userForm div div select {
+  width: 200px;
+  height: 35px;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.userForm div div p {
+  padding-left: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.userForm label {
+  font-weight: 500;
+  font-size: 1.2rem;
+}

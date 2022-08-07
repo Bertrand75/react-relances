@@ -1,0 +1,47 @@
+.userInfos {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #8db3df;
+  border-radius: 5px;
+}
+.userInfos > div {
+  display: flex;
+  align-items: center;
+  height: 30px;
+
+  padding: 1.5rem 1rem;
+  background-color: #5e7497;
+  color: white;
+  border-radius: 5px;
+}
+.userInfos div div {
+  width: 250px;
+}
+.userInfos div div input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.userInfos div div select {
+  width: 200px;
+  height: 35px;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.userInfos div div p {
+  padding-left: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.userInfos label {
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 80px;
+}

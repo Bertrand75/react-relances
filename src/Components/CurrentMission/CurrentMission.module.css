@@ -1,0 +1,19 @@
+.currentMission {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  background-color: #5e7497;
+
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
+.currentMission h3 {
+  color: white;
+}
+.currentMission p {
+  color: #82df82;
+  font-weight: 600;
+}
+.currentMission a {
+  text-decoration: none;
+}

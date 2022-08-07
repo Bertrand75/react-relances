@@ -1,0 +1,45 @@
+.createModule {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #8db3df;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+.createModule textarea {
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.createModule input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  height: 35px;
+  padding: 1rem;
+}
+.toolsContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.toolsContainer button {
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+  background-color: #5e7497;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.toolsContainer .selectedButton {
+  color: #5e7497;
+  background-color: whitesmoke;
+  font-weight: 500;
+}
+.articlePreview {
+  margin-top: 20px;
+}

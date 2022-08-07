@@ -1,0 +1,15 @@
+.container {
+  margin: 15px auto;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgb(206, 55, 55);
+  color: white;
+  width: fit-content;
+  max-width: 800px;
+}

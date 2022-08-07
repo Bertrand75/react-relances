@@ -1,0 +1,7 @@
+.starContainer {
+  display: flex;
+}
+
+.star {
+  color: yellow;
+}

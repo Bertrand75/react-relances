@@ -1,0 +1,154 @@
+.headerNav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  flex-wrap: wrap;
+}
+.hideMenu {
+  display: flex;
+}
+
+.headerNav div {
+  vertical-align: middle;
+  background-color: black;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: whitesmoke;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.headerNav div:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.headerNav .admin {
+  background-color: #5e7497;
+  color: whitesmoke;
+}
+.headerNav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 20px;
+}
+
+.headerNav div::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 5px;
+  background: black;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+  top: 8px;
+}
+.headerNav div:hover::after {
+  transform: scale(1);
+}
+
+.footerNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
+}
+.footerNav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+}
+.footerNav a:hover {
+  opacity: 0.8;
+}
+
+.headerNav .currentPage {
+  color: black;
+  background-color: whitesmoke;
+}
+.headerNav .currentPageAdmin {
+  color: #5e7497;
+  background-color: whitesmoke;
+}
+
+.burger {
+  width: 50px;
+  height: 40px;
+  background: whitesmoke;
+  color: inherit;
+  border: none;
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 6.5rem;
+}
+
+/* ****************************** RESPONSIVE *********************************/
+
+@media (max-width: 768px) {
+  /*  Cas Header */
+  .headerNav {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 50vw;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+  }
+  .hideMenu {
+    left: -100vw;
+    width: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .burgerSlice,
+  .burgerSlice::before,
+  .burgerSlice::after {
+    display: block;
+    width: 40px;
+    height: 4px;
+    position: relative;
+    border-radius: 3px;
+    background: black;
+    transition: all 0.4s ease-in-out;
+  }
+  .burgerSlice::before,
+  .burgerSlice::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burgerSlice::before {
+    transform: translateY(-12px);
+  }
+
+  .burgerSlice::after {
+    transform: translateY(12px);
+  }
+  .burgerX .burgerSlice {
+    background: transparent;
+  }
+  .burgerX .burgerSlice::before {
+    transform: rotate(-45deg);
+  }
+
+  .burgerX .burgerSlice::after {
+    transform: rotate(45deg);
+  }
+  /* Cas Footer */
+  .footerNav {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.missionLink {
+  color: #486497;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 7px;
+}
+
+.missionLink:hover {
+  color: white;
+  background-color: #486497;
+  box-shadow: 0 0 0 1px white inset;
+}
+.missionLink:focus {
+  opacity: 0.7;
+}
+.spaceUnder {
+  margin-bottom: 25px;
+}
+
+.logoContainer {
+  background-color: white;
+  max-width: 150px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.logo {
+  width: 100px;
+}
+
+.divRight {
+  text-align: right;
+}

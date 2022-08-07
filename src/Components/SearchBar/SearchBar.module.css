@@ -1,0 +1,71 @@
+.searchBar {
+  background-color: whitesmoke;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+.searchBarInput {
+  background-color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+.searchBarIcon {
+  vertical-align: middle;
+}
+.selectInput {
+  padding: 10px 40px 10px 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.selectInput input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.paramList {
+  position: absolute;
+  background: whitesmoke;
+  z-index: 1;
+  width: 95%;
+  top: 50px;
+  max-height: 500px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.paramListReduced {
+  max-height: 0;
+}
+
+.selectThis {
+  padding: 0.5rem;
+}
+
+.selectThis:hover {
+  background-color: rgb(221, 220, 220);
+}
+.chevron {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.label {
+  display: block;
+}
+.selectContainer {
+  position: relative;
+}
+
+/* ****************************** RESPONSIVE *********************************/
+@media (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+  }
+}

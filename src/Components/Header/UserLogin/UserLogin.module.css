@@ -1,0 +1,99 @@
+.loginContainer {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+}
+
+.login {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.7rem 0.7rem 0.7rem 1.2rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background-color: black;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+}
+.login:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 0 2px black inset;
+}
+.login:active {
+  background-color: rgb(161, 161, 161);
+}
+
+.loginLabel {
+  font-weight: 500;
+  color: white;
+  font-weight: 600;
+}
+.loginInput {
+  display: block;
+  margin: 10px 0;
+  width: 350px;
+  height: 30px;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+.loginTitle {
+  color: white;
+  margin-bottom: 10px;
+}
+.loginSubmit {
+  cursor: pointer;
+  padding: 5px 10px;
+
+  font-size: 1rem;
+  margin-top: 35px;
+  margin-left: 10px;
+  float: right;
+}
+.errorMessage {
+  background: white;
+  color: red;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+.welcome {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.welcome a {
+  color: #5e7497;
+  text-decoration: none;
+  margin-left: 1.2rem;
+}
+/* ****************************** RESPONSIVE *********************************/
+@media (max-width: 768px) {
+  .loginContainer {
+    position: absolute;
+    top: 100px;
+    right: unset;
+    left: 1rem;
+  }
+  .login {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.7rem 0.7rem 0.7rem 1.2rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .welcome {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
