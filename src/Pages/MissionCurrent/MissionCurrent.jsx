@@ -178,9 +178,13 @@ export default function MissionCurrent() {
         </div>
       </div>
 
-      {visibleTab === "followUpState" && <EtatRelances />}
+      {visibleTab === "followUpState" && (
+        <section className={styles.tabsContent}>
+          <EtatRelances />
+        </section>
+      )}
       {visibleTab === "missionRelances" && (
-        <>
+        <section className={styles.tabsContent}>
           <SortSelect
             arrayToSort={relances}
             setArrayToSort={setRelances}
@@ -521,7 +525,7 @@ export default function MissionCurrent() {
               </div>
             </div>
           </div>
-        </>
+        </section>
       )}
     </div>
   );
