@@ -153,7 +153,7 @@ export default function FormUser() {
               ? "Your user name"
               : "Votre pseudo"
           }
-          value={formik.values.lastname}
+          value={formik.values.userName}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           className="inputClass"
