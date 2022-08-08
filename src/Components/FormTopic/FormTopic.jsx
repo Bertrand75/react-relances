@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import axios from "axios";
 import Context from "../../Context/Context";
 import LanguageContext from "../../Context/LanguageContext";
@@ -7,8 +7,7 @@ import * as Yup from "yup";
 import FormMask from "../FormMask/FormMask";
 import FormFieldset from "../FormFieldset/FormFieldset";
 import FormButton from "../FormButton/FormButton";
-import { createItem, updateItem } from "../../Utilities/CrudFunctions";
-import styles from "./FormTopic.module.css";
+import { createItem } from "../../Utilities/CrudFunctions";
 
 // FORMULAIRE D'AJOUT DE SUJETS
 export default function FormTopic(props) {

@@ -22,15 +22,15 @@ function Footer() {
               </h3>
             </div>
             <div>
-              <a href="#" className={styles.footerLink}>
+              <a href="/" className={styles.footerLink}>
                 Lorem ipsum dolor sit amet.
               </a>
             </div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               Lorem ipsum dolor sit amet.
             </a>
             <div>
-              <a href="#" className={styles.footerLink}>
+              <a href="/" className={styles.footerLink}>
                 {language && language === "english"
                   ? "Sitemap"
                   : "Plan du site"}
@@ -46,20 +46,20 @@ function Footer() {
               </h3>
             </div>
             <div>
-              <a href="#" className={styles.footerLink}>
+              <a href="/" className={styles.footerLink}>
                 {language && language === "english"
                   ? "How to use this application"
                   : "Comment utiliser l'application ?"}
               </a>
             </div>
             <div>
-              <a href="#" className={styles.footerLink}>
+              <a href="/" className={styles.footerLink}>
                 {language && language === "english"
                   ? "Print a follow-up state"
                   : "Imprimer un état des relances"}
               </a>
             </div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               Lorem ipsum dolor sit amet.
             </a>
           </div>
@@ -71,14 +71,14 @@ function Footer() {
                   : "Qui sommes-nous ?"}
               </h3>
             </div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               Lorem ipsum dolor sit amet.
             </a>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               Lorem ipsum dolor sit amet.
             </a>
             <div>
-              <a href="#" className={styles.footerLink}>
+              <a href="/" className={styles.footerLink}>
                 {language && language === "english"
                   ? "Contact us"
                   : "Nous contacter"}
@@ -88,17 +88,17 @@ function Footer() {
         </div>
         <div className={styles.flexRows + " " + styles.socialMedia}>
           <div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               <FaFacebook size="1.8em" />
             </a>
           </div>
           <div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               <FaTwitter size="1.8em" />
             </a>
           </div>
           <div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               <FaGooglePlusG size="1.8em" />
             </a>
           </div>
@@ -106,14 +106,14 @@ function Footer() {
         <p className="textCenter">Copyright @ Toto</p>
         <div className={styles.flexRows}>
           <div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               {language && language === "english"
                 ? "Legal notices"
                 : "Mentions légales"}
             </a>
           </div>
           <div>
-            <a href="#" className={styles.footerLink}>
+            <a href="/" className={styles.footerLink}>
               {language && language === "english"
                 ? "Privacy policy"
                 : "Politique de confidentialité"}

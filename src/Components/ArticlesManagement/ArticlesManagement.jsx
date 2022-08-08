@@ -1,11 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import CardHoriz from "..//CardHoriz/CardHoriz";
-import {
-  getItems,
-  getAllItems,
-  createItem,
-  deleteItem,
-} from "../../Utilities/CrudFunctions";
+import { getAllItems, deleteItem } from "../../Utilities/CrudFunctions";
 import Context from "../../Context/Context";
 
 export default function ArticlesManagement() {

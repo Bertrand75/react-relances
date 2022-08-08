@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import styles from "./StarRating.module.css";
 

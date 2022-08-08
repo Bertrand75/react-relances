@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import axios from "axios";
 import Context from "../../Context/Context";
 import UserContext from "../../Context/UserContext";
@@ -10,12 +10,12 @@ import FormFieldset from "../FormFieldset/FormFieldset";
 
 // FORMULAIRE D'INSRIPTION
 export default function FormUser() {
-  // Récupération du token
-  const { token, setToken } = useContext(Context);
+  // Récupération du setter du token
+  const { setToken } = useContext(Context);
   // Récupération de la langue
   const { language } = useContext(LanguageContext);
-  // Récupération de l'utilisateur loggé
-  const { user, setUser } = useContext(UserContext);
+  // Récupération du setter l'utilisateur loggé
+  const { setUser } = useContext(UserContext);
   // Pour la redirection
   let navigate = useNavigate();
 
