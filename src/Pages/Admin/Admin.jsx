@@ -77,6 +77,7 @@ export default function Admin() {
   const loadForm = (user) => {
     setUser(user);
   };
+
   // Récupération de tous les utilisateurs
   useEffect(() => {
     if (PageAccess) {
