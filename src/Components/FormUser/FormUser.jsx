@@ -21,7 +21,7 @@ export default function FormUser() {
 
   const formik = useFormik({
     initialValues: {
-      userName: "",
+      nickname: "",
       firstname: "",
       lastname: "",
       email: "",
@@ -29,18 +29,18 @@ export default function FormUser() {
       passwordCheck: "",
     },
     validationSchema: Yup.object({
-      userName: Yup.string()
+      nickname: Yup.string()
         .min(
           2,
           language && language === "english"
             ? "At least 2 characters please"
-            : "Le prénom doit posséder 2 caractères au minimum"
+            : "Le pseudo doit posséder 2 caractères au minimum"
         )
         .max(
           20,
           language && language === "english"
             ? "Maximum of 20 characters please"
-            : "Le prénom ne doit pas dépasser 20 caractères"
+            : "Le pseudo ne doit pas dépasser 20 caractères"
         )
         .required(
           language && language === "english"
@@ -111,7 +111,7 @@ export default function FormUser() {
     }),
     onSubmit: (values) => {
       let body = {
-        pseudo: values.userName,
+        pseudo: values.nickname,
         email: values.email,
         password: values.password,
       };
@@ -153,11 +153,14 @@ export default function FormUser() {
               ? "Your user name"
               : "Votre pseudo"
           }
-          value={formik.values.userName}
+          value={formik.values.nickname}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           className="inputClass"
         />
+        {formik.touched.nickname && formik.errors.nickname ? (
+          <p className="formikAlert">{formik.errors.nickname}</p>
+        ) : null}
         <label htmlFor="lastname">
           {language && language === "english" ? "Last Name" : "Nom"} :{" "}
         </label>
