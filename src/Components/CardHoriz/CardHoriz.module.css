@@ -35,8 +35,9 @@
 }
 .visuel {
   height: 30px;
-  border-radius: 2px;
-  overflow: hidden;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .cardHoriz {
   background: linear-gradient(rgb(72, 100, 151), rgb(130, 167, 189));

@@ -92,7 +92,7 @@ export default function EtatRelances() {
                   <th className={styles.width1}>MEDIA</th>
                   <th className={styles.width1}>JOURNALISTE</th>
                   <th className={styles.width2}>ECHANGE</th>
-                  <th className={styles.width1}>STATUT</th>
+                  <th className={styles.width1}>INTERET</th>
                 </tr>
               </thead>
               <tbody>
@@ -104,7 +104,7 @@ export default function EtatRelances() {
                       {relance.journalist.lastname}
                     </td>
                     <td>{relance.description}</td>
-                    <td> </td>
+                    <td>{relance.interest}</td>
                   </tr>
                 ))}
               </tbody>

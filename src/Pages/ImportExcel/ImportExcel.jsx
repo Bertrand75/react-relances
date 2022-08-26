@@ -21,7 +21,7 @@ export default function ImportExcel() {
   // Récupération de la langue
   const { language } = useContext(LanguageContext);
 
-  // Les données des journalistes (ou des journaux) du fichier excell
+  // Les données des journalistes (ou des journaux) du fichier excel
   const [items, setItems] = useState([]);
 
   // Les journalistes (ou les journaux) séllectionnés pour l'ajout

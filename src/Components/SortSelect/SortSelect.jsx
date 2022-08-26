@@ -11,7 +11,7 @@ export default function SortSelect({ arrayToSort, setArrayToSort, params }) {
   const sortList = (arrayToSort, setArrayToSort, param, ascDesc) => {
     let sortedList = [...arrayToSort].sort((a, b) => {
       // Ici on transforme les paramètre de la forme "x.y"(pour accéder à un sous objet) et on adapte le code pour qu'ils puissent fonctionner
-      if (param.includes(".")) {
+      if (param && param.includes(".")) {
         let paramArray = param.split(".");
         let objectA = a[paramArray[0]];
         let valueA = objectA[paramArray[1]];

@@ -1,19 +1,18 @@
 import axios from "axios";
 
 // RECUPERER TOUS LES ELEMENTS
-export function getAllItems(API_LINK, token, signal) {
+export async function getAllItems(API_LINK, token, signal) {
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   };
-  let items = axios
-    .get(API_LINK, config, { signal: signal }) // Le signal est interrompu si on change de page (evite les fuites de mémoires)
-    .then((response) => response.data)
-    .catch((error) => {
-      console.log(error);
-    });
-  return items;
+  try {
+    let items = await axios.get(API_LINK, config, { signal: signal }); // Le signal est interrompu si on change de page (evite les fuites de mémoires)
+    return items.data;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // RECUPERER UN ELEMENT avec son id ou un autre paramètre (défini sous forme de string dans le searchParam; ex: ?name=dupont)

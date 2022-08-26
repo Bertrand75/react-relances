@@ -179,11 +179,14 @@ export default function MissionCurrent() {
       </div>
 
       {visibleTab === "followUpState" && (
+        // ****************************************** ETAT DES RELANCES *********************************************
         <section className={styles.tabsContent}>
           <EtatRelances />
         </section>
       )}
+
       {visibleTab === "missionRelances" && (
+        // *********************************** RELANCES MISSION EN COURS *********************************************
         <section className={styles.tabsContent}>
           <SortSelect
             arrayToSort={relances}

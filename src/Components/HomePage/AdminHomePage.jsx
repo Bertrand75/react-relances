@@ -21,17 +21,19 @@ export default function AdminHomePage() {
     createItem(process.env.REACT_APP_API_LINK_ARTICLE, body, token);
   };
   // Mise en forme du texte
-  const formatSelectedText = (balise) => {
+  const formatSelectedText = (balise, style) => {
     const textArea = document.getElementById("textArea");
     const selectedTextZone = textArea.value.substring(
       textArea.selectionStart,
       textArea.selectionEnd
     );
+    const inlineStyle = style ? " " + style : "";
 
     const newText =
       userText.substring(0, textArea.selectionStart - 1) +
       "<" +
       balise +
+      inlineStyle +
       ">" +
       selectedTextZone +
       "</" +
@@ -89,7 +91,10 @@ export default function AdminHomePage() {
             </button>
             <button
               onClick={() => {
-                formatSelectedText("div");
+                formatSelectedText(
+                  "div",
+                  "style='display:block; font-size:1.3rem; margin:1rem 1rem 1rem 3rem; border-left:3px solid green; padding-left:1rem'"
+                );
               }}
             >
               Citation
@@ -110,7 +115,7 @@ export default function AdminHomePage() {
             </button>
             <button
               onClick={() => {
-                formatSelectedText("div");
+                formatSelectedText("div", "style='color:green;display:inline'");
               }}
             >
               Couleur

@@ -23,9 +23,7 @@ export default function FormButton({ updateMode, cancelUpdate }) {
       />
       {updateMode ? (
         <button onClick={() => cancelUpdate()} className={styles.formButton}>
-          {language && language === "english"
-            ? "Empty the form"
-            : "Vider le formulaire"}
+          {language && language === "english" ? "Cancel" : "Annuler"}
         </button>
       ) : null}
     </>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { FiPlusSquare, FiXSquare } from "react-icons/fi";
 import { FaWindowClose, FaPenSquare } from "react-icons/fa";
 import styles from "./CardHoriz.module.css";
@@ -17,6 +16,7 @@ export default function CardHoriz({
   setItemsToDelete,
 }) {
   const [display, setDisplay] = useState(false);
+
   // Affichage ou non du contenu de la card
   const handleDisplay = () => {
     setDisplay((display) => !display);
