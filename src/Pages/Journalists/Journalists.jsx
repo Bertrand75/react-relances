@@ -14,7 +14,6 @@ import FormMask from "../../Components/FormMask/FormMask";
 import SelectMultiple from "../../Components/SelectMultiple/SelectMultiple";
 import FormFieldset from "../../Components/FormFieldset/FormFieldset";
 import SearchBar from "../../Components/SearchBar/SearchBar";
-import { BiDetail } from "react-icons/bi";
 //import ModalDisplay from "../../Components/ModalDisplay/ModalDisplay";
 import Message from "../../Components/Message/Message";
 //import Journalist from "../Journalist/Journalist";

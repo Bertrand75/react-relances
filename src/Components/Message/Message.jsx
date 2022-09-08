@@ -4,7 +4,7 @@ import styles from "./Message.module.css";
 export default function Message({ message }) {
   // En fonction du type de message (erreur ou succes), ajustement du style
   const okNokStyle =
-    message.status !== 200 && message.status !== 201
+    message.status && message.status !== 200 && message.status !== 201
       ? styles.errorMessageContainer
       : styles.okMessageContainer;
 
